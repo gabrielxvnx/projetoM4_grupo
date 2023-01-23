@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="asci" name="asci">
+    <label for="asci">Digite um caracter</label>
+    <button id="buscar" onclick="verificar()" >Buscar</button>
+
+    <script>
+        function verificar(){
+            var caracter = document.getElementById('asci').value
+            var convertido = caracter.codePointAt(0);
+            
+            console.log(convertido)
+            
+        }
+
+    </script>
+</body>
+</html>
